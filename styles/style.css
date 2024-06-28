@@ -1,0 +1,75 @@
+:root{
+    --yellow-color:#FEA116;
+    --blue-color:#0F172B;
+    --light-gray-color:#CED4DA;
+    --dim-gray-color:#666565;
+    --dark-gray-color:#343A40;
+}
+
+/* .container{
+  width: 100%;
+} */
+.hero-section{
+  background-image: url("assets/bg-hero.png"); /* Correct file extension */
+  background-size: cover; /* Optional: ensures the image covers the element */
+  background-position: center; /* Optional: centers the image */
+  background-repeat: no-repeat; 
+}
+
+
+
+
+
+/* .pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+} */
+  
