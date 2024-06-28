@@ -38,18 +38,16 @@ html, body {
   z-index: -1;
 }
 
- .nav-container{
-  /* background-color: var(--blue-color,black);  */
+.nav-container{
   width: 100%;
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-around; 
   align-items: center;
-  /* overflow-x: hidden; */
 }  
 
 .logo{
-  padding: 10px;
+  padding: 21px;
 }
 
 .nav-bar{
@@ -59,15 +57,60 @@ html, body {
   padding: 10px;
 }
 
-.nav-bar a{
+.nav-link{
   text-decoration: none;
   color: white;
-  margin: 5px; 
+  font-size: 15px;
+  margin: 7px; 
   padding: 5px;
+  font-weight: 500;
+}
+
+.yellow-text{
+  color: var(--yellow-color,yellow) !important;
 }
 
 .book-table-btn{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
   background-color:var(--yellow-color,yellow);
   text-wrap: nowrap;
-  padding: 5px;
+  box-sizing: border-box;
+}
+
+.nav-bar .book-table-btn{
+  border-radius: 2px;
+  width: 152px;
+  height:40px;
+  padding: 8px 24px 8px 24px;
+}
+
+.left-hero .book-table-btn{
+  width: 200px;
+  height:56px;
+  padding:16px 48px 16px 48px;
+}
+
+.hero-content{
+  display:flex;
+  justify-content: space-around;
+}
+
+.main-heading{
+  font-weight: 800;
+  font-size:62px;
+  color: white;
+}
+
+.hero-text{
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+}
+
+.hero-img{
+  width: 500px;
+  height:500px;
 }
