@@ -15,7 +15,7 @@ body {
   font-family: Poppins;
 }
 
-.hero-section {
+.hero-container {
   position: relative;
 }
 
@@ -136,10 +136,45 @@ body {
   padding: 30px;
 }
 
+.attr-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 96px;
+
+}
+
+.yellow-attr {
+  background-color: var(--yellow-color, yellow) !important;
+  color: white;
+}
+
+.attr {
+  background-color: white;
+  padding: 2rem;
+  width: 25%;
+  border-radius: 2px;
+}
+
+.attr-icon {
+  height: 48px;
+}
+
+.attr-title {
+  font-size: 20px;
+  text-wrap: nowrap;
+}
+
+.attr-text {
+  font-size: 14px;
+  padding: 0;
+}
+
 /*tab*/
 @media only screen and (max-width:1150px) {
 
-  /* hero section for the tab */
+  /* hero section */
   .hero-content {
     flex-direction: column;
     justify-content: center;
@@ -168,12 +203,19 @@ body {
     width: 70%;
     height: 70%;
   }
+
+  /* attr section */
+  .attr-container {
+    flex-wrap: wrap;
+    padding: 50px;
+  }
+
 }
 
 /* mobile */
 @media only screen and (max-width:540px) {
 
-  /* hamburger for the mobile version */
+  /* hamburger */
   .nav-container {
     background-color: var(--blue-color, black);
   }
@@ -213,7 +255,7 @@ body {
     margin: 1.5rem;
   }
 
-  /* hero section for the mobile version */
+  /* hero section */
   .main-heading {
     font-size: 38.5px;
   }
@@ -221,5 +263,14 @@ body {
   .hero-text {
     width: 450px;
   }
-  
+
+  /* attr section */
+  .attr-container {
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .attr {
+    width: 80%;
+  }
 }
