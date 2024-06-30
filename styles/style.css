@@ -168,119 +168,134 @@ body {
 .attr-title {
   font-size: 20px;
   text-wrap: nowrap;
-  color: var(--blue-color,black);
+  color: var(--blue-color, black);
 }
 
 .attr-text {
   font-size: 14px;
   padding: 0;
-  color: var(--dim-gray-color,gray);
+  color: var(--dim-gray-color, gray);
 }
 
 /* about section */
-.about-container{
-  display:flex;
+.about-container {
+  display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 96px;
+  gap: 30px;
 }
 
-.about-grid{
+.about-grid {
   display: grid;
-  grid-template-columns: repeat(2,270px);
-  grid-template-rows: repeat(2,270px);
+  grid-template-columns: repeat(2, 270px);
+  grid-template-rows: repeat(2, 270px);
   gap: 15px 15px;
 }
 
-.small-img-top{
+.large-about-img {
+  width: 270px;
+  height: 270px;
+}
+
+.small-about-img {
+  width: 203px;
+  height: 203px;
+}
+
+.small-img-top {
   align-self: end;
 }
-.small-img-bottom{
-justify-self: end;
+
+.small-img-bottom {
+  justify-self: end;
 }
 
-.about-content{
-  width:50%;
+.about-content {
+  width: 50%;
+  /* padding-left: 15px; */
 }
 
-.heading-container{
+.heading-container {
   display: flex;
 }
 
-.section-heading{
+.section-heading {
   font-family: Pacifico;
-  font-size:20px;
+  font-size: 20px;
   font-weight: 400;
-  margin:0;
+  margin: 0;
   padding-right: 9px;
-  color: var(--yellow-color,yellow);
+  color: var(--yellow-color, yellow);
 }
 
-.about-title{
-  font-size:40px;
-  font-weight:700;
-  color: var(--blue-color,black);
+.about-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--blue-color, black);
+  text-wrap: nowrap;
   display: flex;
   align-items: center;
   padding: 0;
-  margin:0;
+  margin: 0;
 }
 
-.about-title-icon{
+.about-title-icon {
   height: 40px;
   padding: 9px;
 }
 
-.about-text{
-  font-size:16px;
-  font-weight:400;
-  color: var(--dim-gray-color,gray);
+.about-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--dim-gray-color, gray);
   width: 537px;
 }
 
-.highlight{
+.highlight {
   display: flex;
   align-items: center;
   margin-bottom: 40px;
 }
 
-.highlight-card{
-  width:50%;
+.highlight-card {
+  width: 50%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.vertical-divider{
+.vertical-divider {
   height: 57px;
   padding-right: 9px;
 }
 
-.highlight-number{
+.highlight-number {
   font-size: 48px;
   font-weight: 700;
-  color: var(--yellow-color,yellow);
+  color: var(--yellow-color, yellow);
   margin: 0%;
   padding-right: 22px;
 }
 
-.top-line{
+.top-line {
   font-size: 16px;
-  font-weight:400;
-  color: var(--dim-gray-color,gray);
+  font-weight: 400;
+  color: var(--dim-gray-color, gray);
   padding: 0;
-  margin:0;
+  margin: 0;
 }
 
-.bottom-line{
+.bottom-line {
   font-size: 16px;
-  font-weight:700;
-  color: var(--blue-color,black);
+  font-weight: 700;
+  color: var(--blue-color, black);
   padding: 0;
-  margin:0;
+  margin: 0;
+  text-wrap: nowrap;
 }
 
-.read-btn{
+.read-btn {
   width: 200px;
   height: 56px;
   border-radius: 2px;
@@ -325,6 +340,49 @@ justify-self: end;
     flex-wrap: wrap;
     padding: 50px;
   }
+
+  /* about section */
+  .about-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 15px;
+  }
+
+  .about-grid {
+    grid-template-columns: repeat(2, 183px);
+    grid-template-rows: repeat(2, 183px);
+    gap: 10px;
+  }
+
+  .large-about-img {
+    width: 183px;
+    height: 183px;
+  }
+
+  .small-about-img {
+    width: 137px;
+    height: 137px;
+  }
+
+  .about-content {
+    width: 50%;
+  }
+
+  .about-title {
+    font-size: 35px;
+  }
+
+  .about-text {
+    width: 450px;
+  }
+
+  .highlight {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
 
 }
 
@@ -388,5 +446,34 @@ justify-self: end;
 
   .attr {
     width: 80%;
+  }
+
+  /* about section */
+  .about-grid {
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: repeat(2, 130px);
+    gap: 10px;
+  }
+
+  .large-about-img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .small-about-img {
+    width: 97px;
+    height: 97px;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+
+  .about-title {
+    font-size: 28px;
+  }
+
+  .about-text {
+    width: 377px;
   }
 }
