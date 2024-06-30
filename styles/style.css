@@ -78,7 +78,7 @@ body {
   color: var(--yellow-color, yellow) !important;
 }
 
-.book-table-btn {
+.btn {
   text-decoration: none;
   color: white;
   font-size: 16px;
@@ -94,6 +94,8 @@ body {
   height: 40px;
   padding: 8px 24px 8px 24px;
 }
+
+/* hero section */
 
 .left-hero .book-table-btn {
   width: 200px;
@@ -136,6 +138,8 @@ body {
   padding: 30px;
 }
 
+/* attribute section */
+
 .attr-container {
   display: flex;
   justify-content: center;
@@ -147,7 +151,7 @@ body {
 
 .yellow-attr {
   background-color: var(--yellow-color, yellow) !important;
-  color: white;
+  color: white !important;
 }
 
 .attr {
@@ -164,11 +168,123 @@ body {
 .attr-title {
   font-size: 20px;
   text-wrap: nowrap;
+  color: var(--blue-color,black);
 }
 
 .attr-text {
   font-size: 14px;
   padding: 0;
+  color: var(--dim-gray-color,gray);
+}
+
+/* about section */
+.about-container{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 96px;
+}
+
+.about-grid{
+  display: grid;
+  grid-template-columns: repeat(2,270px);
+  grid-template-rows: repeat(2,270px);
+  gap: 15px 15px;
+}
+
+.small-img-top{
+  align-self: end;
+}
+.small-img-bottom{
+justify-self: end;
+}
+
+.about-content{
+  width:50%;
+}
+
+.heading-container{
+  display: flex;
+}
+
+.section-heading{
+  font-family: Pacifico;
+  font-size:20px;
+  font-weight: 400;
+  margin:0;
+  padding-right: 9px;
+  color: var(--yellow-color,yellow);
+}
+
+.about-title{
+  font-size:40px;
+  font-weight:700;
+  color: var(--blue-color,black);
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin:0;
+}
+
+.about-title-icon{
+  height: 40px;
+  padding: 9px;
+}
+
+.about-text{
+  font-size:16px;
+  font-weight:400;
+  color: var(--dim-gray-color,gray);
+  width: 537px;
+}
+
+.highlight{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.highlight-card{
+  width:50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.vertical-divider{
+  height: 57px;
+  padding-right: 9px;
+}
+
+.highlight-number{
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--yellow-color,yellow);
+  margin: 0%;
+  padding-right: 22px;
+}
+
+.top-line{
+  font-size: 16px;
+  font-weight:400;
+  color: var(--dim-gray-color,gray);
+  padding: 0;
+  margin:0;
+}
+
+.bottom-line{
+  font-size: 16px;
+  font-weight:700;
+  color: var(--blue-color,black);
+  padding: 0;
+  margin:0;
+}
+
+.read-btn{
+  width: 200px;
+  height: 56px;
+  border-radius: 2px;
+  padding: 16px 48px 16px 48px;
 }
 
 /*tab*/
