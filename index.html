@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,114 +14,129 @@
 </head>
 
 <body>
-    <div class="hero-section container">
+    <div class="hero-container container">
         <div class="bg-img"></div>
         <div class="overlay"></div>
-        <div class="hero-container">
+        <div class="hero-section">
             <div class="nav-container">
+
                 <div class="logo">
                     <img src="assets/logo.png" alt="Restoran logo">
                 </div>
-                <div class="nav-bar">
-                    <a href="#">HOME</a>
-                    <a href="#">CONTACT</a></li>
-                    <a href="#" class="book-table-btn">Book a Table</a>
+
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn" id="hamburger">
+                    <img src="assets/hamburger.svg" alt="">
+                </label>
+
+                <div class="nav-bar nav-mobile">
+                    <a href="#" class="nav-link yellow-text">HOME</a>
+                    <a href="#" class="nav-link">CONTACT</a></li>
+                    <a href="#" class="nav-link btn book-table-btn">Book A Table</a>
                 </div>
+
             </div>
-            <div class="hero">
+            <div class="hero-content">
                 <div class="left-hero">
-                    <h1 class="poppins-extrabold">Enjoy Our <br> Delicious Meal</h1>
-                    <p> Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam <br>
-                        amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita <br>
+                    <h1 class="main-heading">Enjoy Our <br> Delicious Meal</h1>
+                    <p class="hero-text"> Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam
+                        amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita
                         duo justo magna dolore erat amet
                     </p>
-                    <a href="#" clss="book-table-btn">Book a Table</a>
+                    <a href="#" class="btn book-table-btn">Book A Table</a>
                 </div>
                 <div class="right-hero">
-                    <img src="assets/hero.png" alt="">
+                    <img class="hero-img" src="assets/hero.png" alt="">
                 </div>
             </div>
         </div>
     </div>
     <!-- end of hero section -->
 
-    <!-- <div class="container">
-        <div class="card">
-            <img src="assets/chef-icon.png" alt="master chef">
-            <h3>Master Chef</h3>
-            <p> Diam elitr kasd sed at elitr <br>
+    <div class="attr-container">
+        <div class="attr yellow-attr">
+            <img class="attr-icon" src="assets/chef-icon.png" alt="master chef">
+            <h3 class="attr-title yellow-attr">Master Chef</h3>
+            <p class="attr-text yellow-attr"> Diam elitr kasd sed at elitr <br>
                 sed ipsum justo dolor sed <br>
                 clita amet diam
             </p>
         </div>
-        <div class="card">
-            <img src="assets/food-icon.png" alt="quality food">
-            <h3>Quality Food</h3>
-            <p> Diam elitr kasd sed at elitr <br>
+        <div class="attr">
+            <img class="attr-icon" src="assets/food-icon.png" alt="quality food">
+            <h3 class="attr-title">Quality Food</h3>
+            <p class="attr-text"> Diam elitr kasd sed at elitr <br>
                 sed ipsum justo dolor sed <br>
                 clita amet diam
             </p>
         </div>
-        <div class="card">
-            <img src="assets/order-icon.png" alt="online order">
-            <h3>Online Order</h3>
-            <p> Diam elitr kasd sed at elitr <br>
+        <div class="attr">
+            <img class="attr-icon" src="assets/order-icon.png" alt="online order">
+            <h3 class="attr-title">Online Order</h3>
+            <p class="attr-text"> Diam elitr kasd sed at elitr <br>
                 sed ipsum justo dolor sed <br>
                 clita amet diam
             </p>
         </div>
-        <div class="card">
-            <img src="assets/service-icon.png" alt="24/7 services">
-            <h3>24/7 Service</h3>
-            <p> Diam elitr kasd sed at elitr <br>
+        <div class="attr">
+            <img class="attr-icon" src="assets/service-icon.png" alt="24/7 services">
+            <h3 class="attr-title">24/7 Service</h3>
+            <p class="attr-text"> Diam elitr kasd sed at elitr <br>
                 sed ipsum justo dolor sed <br>
                 clita amet diam
             </p>
         </div>
     </div>
-    <div class="container">
-        <div class="about-img">
+    <!-- end of attributes section -->
+
+    <div class="about-container">
+
+        <div class="about-grid">
             <img src="assets/about-1.png" alt="">
-            <img src="assets/about-2.png" alt="">
-            <img src="assets/about-3.png" alt="">
+            <img class="small-img-top" src="assets/about-2.png" alt="">
+            <img class="small-img-bottom" src="assets/about-3.png" alt="">
             <img src="assets/about-4.png" alt="">
         </div>
+
         <div class="about-content">
-            <div class="section-heading">
-                <h3>about us</h3>
+            <div class="heading-container">
+                <h3 class="section-heading">About Us</h3>
                 <img src="assets/horizontal-divider.svg" alt="">
             </div>
-            <h1>Welcome to <img src="assets/food-icon.png" alt=""> Restoran</h1>
-            <p>
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu <br>
+            <h1 class="about-title">Welcome to <img class="about-title-icon" src="assets/food-icon.png" alt=""> Restoran</h1>
+            <p class="about-text">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu 
                 diam ametdiam et eos erat ipsum et lorem et sit, sed stet lorem sit.
             </p>
-            <p>
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu <br>
-                diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet <br>
+            <p class="about-text">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu 
+                diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
                 lorem sit clita duo justo magna dolore erat amet
             </p>
             <div class="highlight">
+
                 <div class="highlight-card">
-                    <img src="assets/vertical-divider.png" alt="">
-                    <h1>13</h1>
+                    <img class="vertical-divider" src="assets/vertical-divider.png" alt="">
+                    <h2 class="highlight-number">13</h2>
                     <div class="highlight-text">
                         <p class="top-line">Years of</p>
                         <p class="bottom-line">EXPERIENCE</p>
                     </div>
                 </div>
+
                 <div class="highlight-card">
-                    <img src="assets/vertical-divider.png" alt="">
-                    <h1>50</h1>
+                    <img class="vertical-divider" src="assets/vertical-divider.png" alt="">
+                    <h2 class="highlight-number">50</h2>
                     <div class="highlight-text">
                         <p class="top-line">Popular</p>
                         <p class="bottom-line">MASTER CHEFS</p>
                     </div>
                 </div>
+
             </div>
-            <a href="#" class="btn">READ MORE</a>
+            <a href="#" class="btn read-btn">READ MORE</a>
         </div>
     </div>
-    <div></div> -->
 </body>
+
 </html>
