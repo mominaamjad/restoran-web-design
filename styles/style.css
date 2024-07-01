@@ -378,14 +378,14 @@ body {
 /* booking section */
 
 .booking-container {
-  height: 600px;
+  height: 615px;
   display: flex;
-  background-color: var(--blue-color, black);
 }
 
 .booking-left {
   width: 50%;
 }
+
 
 .booking-right {
   background-color: var(--blue-color, black);
@@ -525,6 +525,36 @@ body {
     width: 100%;
   }
 
+  /* booking section */
+
+  .booking-container {
+    flex-direction: column;
+  }
+
+  .booking-img {
+    width: 100%;
+  }
+
+  .booking-left {
+    width: 100%;
+  }
+
+
+  .booking-right {
+    width: 100%;
+  }
+
+  .input-field {
+    width: 100%;
+  }
+
+  #special-request {
+    width: 100%;
+  }
+
+  .book-now-btn {
+    width: 100%;
+  }
 }
 
 /* mobile */
@@ -590,7 +620,7 @@ body {
   }
 
   /* about section */
-  .about-grid {
+  /* .about-grid {
     grid-template-columns: repeat(2, 130px);
     grid-template-rows: repeat(2, 130px);
     gap: 10px;
@@ -604,7 +634,7 @@ body {
   .small-about-img {
     width: 97px;
     height: 97px;
-  }
+  } */
 
   .about-content {
     width: 100%;
