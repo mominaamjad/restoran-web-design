@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
 
 :root {
   --yellow-color: #FEA116;
@@ -13,6 +15,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: Poppins;
+}
+
+a {
+  text-decoration: none;
 }
 
 .yellow-text {
@@ -71,7 +77,6 @@ body {
 }
 
 .nav-link {
-  text-decoration: none;
   color: white;
   font-size: 15px;
   margin: 7px;
@@ -85,7 +90,6 @@ body {
 }
 
 .btn {
-  text-decoration: none;
   color: white;
   font-size: 16px;
   font-weight: 500;
@@ -230,12 +234,13 @@ body {
   font-size: 20px;
   font-weight: 400;
   margin: 0;
-  padding-right: 9px;
   color: var(--yellow-color, yellow);
 }
 
-.horizontal-divider{
+.horizontal-divider {
   width: 45px;
+  padding-left: 9px;
+  padding-right: 9px;
 }
 
 .section-title {
@@ -246,7 +251,12 @@ body {
   display: flex;
   align-items: center;
   padding: 0;
+  padding-bottom: 47px;
   margin: 0;
+}
+
+.about-section-title {
+  padding-bottom: 0px !important;
 }
 
 .about-title-icon {
@@ -325,7 +335,6 @@ body {
 .menu-type-container {
   display: flex;
   gap: 32px;
-  padding-top: 50px;
   padding-bottom: 67px;
 }
 
@@ -383,7 +392,6 @@ body {
 /* booking section */
 
 .booking-container {
-  height: 615px;
   display: flex;
 }
 
@@ -404,7 +412,6 @@ body {
 .booking-form {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 24px;
   gap: 18px 32px;
 }
 
@@ -475,7 +482,7 @@ body {
 .chefs-container {
   display: flex;
   gap: 0px 72px;
-  padding-top: 47px;
+
 }
 
 .chef {
@@ -486,43 +493,43 @@ body {
 
 .chef-img {
   height: 219px;
-  width:219px;
+  width: 219px;
   border-radius: 50%;
 }
 
-.chef-name{
+.chef-name {
   font-size: 20px;
   font-weight: 700;
-  color: var(--blue-color,black);
+  color: var(--blue-color, black);
   padding: 0;
-  margin:0;
+  margin: 0;
   padding-top: 19px;
 }
 
-.chef-designation{
+.chef-designation {
   font-size: 14px;
   font-weight: 400;
-  color: var(--dim-gray-color,gray);
+  color: var(--dim-gray-color, gray);
   padding: 0;
-  margin:0;
+  margin: 0;
   padding-top: 2px;
 }
 
-.chef-socials{
+.chef-socials {
   display: flex;
   padding-top: 15;
   position: relative;
 }
 
-.chef-social-bg{
+.chef-social-bg {
   display: flex;
   gap: 0px 8px;
-/* z-index: 1; */
-/* left: 0;
+  /* z-index: 1; */
+  /* left: 0;
 top: 0; */
 }
 
-.chef-social-icon{
+.chef-social-icon {
   position: absolute;
   display: flex;
   /* z-index: 2; */
@@ -533,75 +540,200 @@ top: 0; */
 
 /* testimonials section */
 
-.testimonials-container{
-  display:flex;
+.testimonials-container {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 96px;
 }
-.reviews-container{
-display: flex;
-padding-top: 48px;
-gap:0px 30px;
+
+.reviews-container {
+  display: flex;
+  gap: 0px 30px;
 }
-.review{
+
+.review {
   padding: 24px;
   border-radius: 2px;
   border: 1px solid #DEE2E6;
 }
-.review-text{
+
+.review-text {
   width: 293px;
   font-size: 16px;
-  font-weight:400;
-  color: var(--dim-gray-color,gray);
+  font-weight: 400;
+  color: var(--dim-gray-color, gray);
 }
 
-.client-container{
+.client-container {
   display: flex;
 }
-.client-img{
+
+.client-img {
   width: 50px;
   height: 50px;
   padding-right: 16px;
 }
-.client-info{
+
+.client-info {
   height: 50px;
 }
-.client-name{
+
+.client-name {
   font-size: 20px;
-  font-weight:700;
-  color: var(--blue-color,black);
-  padding: 0%;margin:0%;
+  font-weight: 700;
+  color: var(--blue-color, black);
+  padding: 0%;
+  margin: 0%;
 }
-.client-profession{
+
+.client-profession {
   font-size: 14px;
-  font-weight:400;
-  color: var(--dim-gray-color,gray);
-  padding: 0%;margin:0%;
+  font-weight: 400;
+  color: var(--dim-gray-color, gray);
+  padding: 0%;
+  margin: 0%;
 }
 
 /* footer section */
-footer{
+footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background-color: #272F41;
+  height: 70px
 }
-.footer-text{
+
+.footer-text {
   font-size: 15px;
   font-weight: 400;
 }
-.underline-text{
+
+.underline-text {
   text-decoration: underline;
 }
 
-.footer-links a{
-  text-decoration: none;
+.footer-links a {
   font-size: 15px;
   font-weight: 400;
   padding-right: 27px;
 }
+
+/* 
+
+CONTACT PAGE
+
+*/
+
+.contact-overlay {
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+.contact-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 69px 682px 140px 681px;
+}
+
+.title {
+  font-family: Nunito;
+  font-size: 64px;
+  font-weight: 800;
+  /* text-wrap: nowrap; */
+  padding: 0%;
+  margin: 0%;
+}
+
+.path {
+  font-family: Heebo;
+  font-weight: 400;
+  padding: 0%;
+  margin: 0%;
+  padding-top: 15px;
+}
+
+.contact-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 96px;
+}
+
+.contact-emails-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0px 162px;
+}
+
+.email-title-section {
+  display: flex;
+}
+
+.email-section {
+  display: flex;
+  align-items: center;
+}
+
+.email-icon {
+  height: 16px;
+  padding-right: 7px;
+}
+
+.email-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--dim-gray-color, gray);
+  padding: 0;
+  margin: 0;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top:25px;
+}
+
+.map-img{
+  height:372px;
+  width:50%;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 20px;
+  width: 50%;
+}
+
+.contact-input-field {
+  border: 1px solid var(--light-gray-color);
+  height: 56px;
+  width: 260px;
+}
+
+.subject-field{
+  width: 553px;
+}
+
+#message {
+  border: 1px solid var(--light-gray-color);
+  resize: none;
+  height: 148px;
+  width: 553px;
+}
+
+
+
 
 /*tab*/
 @media only screen and (max-width:1150px) {
@@ -725,59 +857,58 @@ footer{
   .master-chef-container {
     padding: 23px;
   }
-  
+
   .chefs-container {
     display: flex;
     flex-direction: column;
     gap: 0px 72px;
-    padding-top: 47px;
   }
-  
+
   .chef {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .chef-img {
     height: 219px;
-    width:219px;
+    width: 219px;
     border-radius: 50%;
   }
-  
-  .chef-name{
+
+  .chef-name {
     font-size: 20px;
     font-weight: 700;
-    color: var(--blue-color,black);
+    color: var(--blue-color, black);
     padding: 0;
-    margin:0;
+    margin: 0;
     padding-top: 19px;
   }
-  
-  .chef-designation{
+
+  .chef-designation {
     font-size: 14px;
     font-weight: 400;
-    color: var(--dim-gray-color,gray);
+    color: var(--dim-gray-color, gray);
     padding: 0;
-    margin:0;
+    margin: 0;
     padding-top: 2px;
   }
-  
-  .chef-socials{
+
+  .chef-socials {
     display: flex;
     padding-top: 15;
     position: relative;
   }
-  
-  .chef-social-bg{
+
+  .chef-social-bg {
     display: flex;
     gap: 0px 8px;
-  z-index: 1;
-  /* left: 0;
+    z-index: 1;
+    /* left: 0;
   top: 0; */
   }
-  
-  .chef-social-icon{
+
+  .chef-social-icon {
     position: absolute;
     display: flex;
     z-index: 2;
@@ -785,16 +916,16 @@ footer{
     bottom: 10;
     left: 18;
   }
-  
-/* testimonials section */
 
-.testimonials-container {
-  padding: 23px;
-}
+  /* testimonials section */
 
-.reviews-container{
-  flex-direction: column;
-  gap:24px 0px;
+  .testimonials-container {
+    padding: 23px;
+  }
+
+  .reviews-container {
+    flex-direction: column;
+    gap: 24px 0px;
   }
 
 }
@@ -891,9 +1022,9 @@ footer{
   }
 
   /* footer section */
-  footer{
+  footer {
     flex-direction: column;
     padding: 26px;
-    background-color: var(--blue-color,black);
+    background-color: var(--blue-color, black);
   }
 }
