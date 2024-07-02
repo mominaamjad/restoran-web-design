@@ -119,6 +119,11 @@ a {
   align-items: flex-start;
 }
 
+.img-container{
+  width:100%;
+  margin:auto;
+}
+
 .main-heading {
   margin: 0;
   padding: 0;
@@ -146,6 +151,7 @@ a {
   width: 500px;
   height: 500px;
   padding: 30px;
+  margin:auto;
 }
 
 /* attribute section */
@@ -636,14 +642,14 @@ CONTACT PAGE
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 69px 682px 140px 681px;
+  padding-top: 69px;
+  padding-bottom: 140px;
 }
 
 .title {
   font-family: Nunito;
   font-size: 64px;
   font-weight: 800;
-  /* text-wrap: nowrap; */
   padding: 0%;
   margin: 0%;
 }
@@ -697,43 +703,52 @@ CONTACT PAGE
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top:25px;
+  padding-top: 25px;
+  gap: 0px 32px;
 }
 
-.map-img{
-  height:372px;
-  width:50%;
+.map-img {
+  width: 50%;
   border-radius: 2px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-self: flex-end;
 }
+
 .contact-form {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px 20px;
-  width: 50%;
+  gap: 18px 30px;
+  /* width: 50%; */
 }
 
 .contact-input-field {
   border: 1px solid var(--light-gray-color);
   height: 56px;
   width: 260px;
+  border-radius: 2px;
 }
 
-.subject-field{
+.subject-field {
   width: 553px;
 }
 
 #message {
   border: 1px solid var(--light-gray-color);
+  border-radius: 2px;
   resize: none;
   height: 148px;
   width: 553px;
 }
 
 
-
+.go-to-top {
+  position: fixed;
+  bottom: 96px;
+  z-index: 9;
+  right: 10px;
+  padding: 10px;
+}
 
 /*tab*/
 @media only screen and (max-width:1150px) {
@@ -771,6 +786,7 @@ CONTACT PAGE
   .hero-img {
     width: 70%;
     height: 70%;
+    margin:auto;
   }
 
   /* attr section */
@@ -928,7 +944,56 @@ CONTACT PAGE
     gap: 24px 0px;
   }
 
+  /* contact page */
+  /* 
+
+
+  .title {
+    font-family: Poppins;
+    font-size: 55px;
+    text-align: center;
+    text-wrap: nowrap;
+  }
+
+  .path {
+    font-family: Poppins;
+  }
+
+  .contact-page-container {
+    padding: 27px;
+  }
+
+  .contact-emails-container {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px 0px;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    padding: 23px;
+    gap: 24px 0px;
+  }
+
+  .map-img {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .map-img img {
+    width: 100%;
+  }
+
+  .contact-input-field,
+  .subject-field,
+  #message {
+    width: 100%;
+  }
+}*/
 }
+
 
 /* mobile */
 @media only screen and (max-width:540px) {
