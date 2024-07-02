@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="hero-container container">
+    <div class="hero-container">
         <div class="bg-img"></div>
         <div class="overlay"></div>
         <div class="hero-section">
@@ -54,7 +54,7 @@
     <!-- end of hero section -->
 
     <div class="attr-container">
-        <div class="attr yellow-attr">
+        <div class="attr yellow-bg">
             <img class="attr-icon" src="assets/chef-icon.png" alt="master chef">
             <h3 class="attr-title white-text">Master Chef</h3>
             <p class="attr-text white-text"> Diam elitr kasd sed at elitr <br>
@@ -100,7 +100,7 @@
         <div class="about-content">
             <div class="heading-container">
                 <h3 class="section-heading">About Us</h3>
-                <img src="assets/horizontal-divider.svg" alt="">
+                <img class="horizontal-divider" src="assets/horizontal-divider.svg" alt="">
             </div>
             <h1 class="section-title">Welcome to <img class="about-title-icon" src="assets/food-icon.png" alt=""> Restoran</h1>
             <p class="about-text">
@@ -133,16 +133,16 @@
                 </div>
 
             </div>
-            <a href="#" class="btn read-btn">READ MORE</a>
+            <a href="#master-chef" class="btn read-btn">READ MORE</a>
         </div>
     </div>
     <!-- end of about section -->
 
     <div class="popular-items-container">
         <div class="heading-container">
-            <img src="assets/horizontal-divider.svg" alt="">
+            <img class="horizontal-divider" src="assets/horizontal-divider.svg" alt="">
             <h3 class="section-heading">Food Menu</h3>
-            <img src="assets/horizontal-divider.svg" alt="">
+            <img class="horizontal-divider" src="assets/horizontal-divider.svg" alt="">
         </div>
         <h1 class="section-title">Most Popular Items</h1>
         <div class="menu-type-container">
@@ -233,15 +233,7 @@
                 </div>
                 <p class="item-price">$115</p>
             </div>
-
-
-
-
-
-
-
         </div>
-
     </div>
     <!-- end of popular items section -->
 
@@ -252,28 +244,126 @@
         <div class="booking-right">
             <div class="heading-container">
                 <h3 class="section-heading">Reservation</h3>
-                <img src="assets/horizontal-divider.svg" alt="">
+                <img class="horizontal-divider" src="assets/horizontal-divider.svg" alt="">
             </div>
             <h1 class="section-title white-text">Book A Table Online</h1> 
             <form action="#" class="booking-form">
                 <input type="text" class="input-field" name="name" placeholder="Your Name">
                 <input type="email" class="input-field" name="email" placeholder="Your Email">
-                <input type="datetime-local" class="input-field" name="datetime">
-                <select name="no-of-people" class="input-field" id="no-of-people">
-                    <option value="" disabled selected>No. of people</option>
-                    <option value="1">1 person</option>
-                    <option value="2">2 persons</option>
-                    <option value="3">3 persons</option>
-                    <option value="4">4 persons</option>
-                    <option value="5">5 persons</option>
-                    <option value="6">6 persons</option>
-                    <option value=">6">More than 6 persons</option>
-                </select>
+                <input type="datetime" class="input-field" name="datetime" placeholder="Date & Time">
+                <div class="input-field select-wrap">
+                    <label class="select-label" for="no-of-people">No of People</label>
+                    <select name="no-of-people" class="no-of-people">
+                        <option value="1">1 person</option>
+                        <option value="2">2 persons</option>
+                        <option value="3">3 persons</option>
+                        <option value="4">4 persons</option>
+                        <option value="5">5 persons</option>
+                        <option value="6">6 persons</option>
+                        <option value=">6">More than 6 persons</option>
+                    </select>
+                </div>
                 <textarea id="special-request" name="special-request" maxlength="400" placeholder="Special Requests"></textarea>
                 <button type="submit" class="btn book-now-btn">BOOK NOW</button>
             </form>
         </div>
     </div>
+
+    <div class="master-chef-container" id="master-chef">
+        <div class="heading-container">
+            <img class="horizontal-divider" src="assets/horizontal-divider.svg" alt="">
+            <h3 class="section-heading">Team Members</h3>
+            <img class="horizontal-divider" src="assets/horizontal-divider.svg" alt="">
+        </div>
+        <h1 class="section-title">Our Master Chefs</h1>
+        <div class="chefs-container">
+            <div class="chef">
+                <img class="chef-img" src="assets/team-1.png" alt="">
+                <p class="chef-name">Full Name</p>
+                <p class="chef-designation">Designation</p>
+                <div class="chef-socials">
+                    <div class="chef-social-bg">
+                        <a href="https://www.facebook.com/" target="_blank"><img src="assets/icon-background.png" alt=""></a>
+                        <a href="https://x.com/" target="_blank"><img src="assets/icon-background.png" alt=""></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="assets/icon-background.png" alt=""></a>
+                    </div>
+                    <div class="chef-social-icon">
+                        <a href="https://www.facebook.com/" target="_blank"><img src="assets/facebook.png" alt=""></a>
+                        <a href="https://x.com/" target="_blank"><img src="assets/twitter.png" alt=""></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="assets/instagram.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="chef">
+                <img class="chef-img" src="assets/team-2.png" alt="">
+                <p class="chef-name">Full Name</p>
+                <p class="chef-designation">Designation</p>
+            </div>
+            <div class="chef">
+                <img class="chef-img" src="assets/team-3.png" alt="">
+                <p class="chef-name">Full Name</p>
+                <p class="chef-designation">Designation</p>
+            </div>
+            <div class="chef">
+                <img class="chef-img" src="assets/team-4.png" alt="">
+                <p class="chef-name">Full Name</p>
+                <p class="chef-designation">Designation</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonials-container">
+        <div class="heading-container">
+            <img class="horizontal-divider" src="assets/horizontal-divider.svg" alt="">
+            <h3 class="section-heading">Testimonials</h3>
+            <img class="horizontal-divider" src="assets/horizontal-divider.svg" alt="">
+        </div>
+        <h1 class="section-title">Our Clients Say !!!</h1>
+        <div class="reviews-container">
+            <div class="review">
+                <img src="assets/quotes-yellow.svg" alt="">
+                <p class="review-text">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                <div class="client-container">
+                    <img class="client-img" src="assets/testimonial-1.png" alt="">
+                    <div class="client-info">
+                        <p class="client-name">Client Name</p>
+                        <p class="client-profession">Profession</p>
+                    </div>
+                </div>
+            </div>
+            <div class="review yellow-bg">
+                <img src="assets/quotes-white.svg" alt="">
+                <p class="review-text white-text">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                <div class="client-container">
+                    <img class="client-img" src="assets/testimonial-2.png" alt="">
+                    <div class="client-info">
+                        <p class="client-name white-text">Client Name</p>
+                        <p class="client-profession white-text">Profession</p>
+                    </div>
+                </div>
+            </div>
+            <div class="review">
+                <img src="assets/quotes-yellow.svg" alt="">
+                <p class="review-text">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                <div class="client-container">
+                    <img class="client-img" src="assets/testimonial-3.png" alt="">
+                    <div class="client-info">
+                        <p class="client-name">Client Name</p>
+                        <p class="client-profession">Profession</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="footer-text white-text">© <span class="underline-text">Your Site Name</span>,All Right Reserved.</p>
+        <div class="footer-links">
+            <a class="white-text" href="index.html">Home</a>
+            <a class="white-text" href="contact.html">Contact</a>
+        </div>
+    </footer>
+
 </body>
 
 </html>

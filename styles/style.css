@@ -15,6 +15,16 @@ body {
   font-family: Poppins;
 }
 
+.yellow-text {
+  color: var(--yellow-color, yellow) !important;
+}
+
+.white-text {
+  color: white !important;
+}
+
+/* layers behind hero and nav bar */
+
 .hero-container {
   position: relative;
 }
@@ -74,14 +84,6 @@ body {
   display: none;
 }
 
-.yellow-text {
-  color: var(--yellow-color, yellow) !important;
-}
-
-.white-text {
-  color: white !important;
-}
-
 .btn {
   text-decoration: none;
   color: white;
@@ -100,12 +102,6 @@ body {
 }
 
 /* hero section */
-
-.left-hero .book-table-btn {
-  width: 200px;
-  height: 56px;
-  padding: 16px 48px 16px 48px;
-}
 
 .hero-content {
   display: flex;
@@ -136,6 +132,12 @@ body {
   width: 574px;
 }
 
+.left-hero .book-table-btn {
+  width: 200px;
+  height: 56px;
+  padding: 16px 48px 16px 48px;
+}
+
 .hero-img {
   width: 500px;
   height: 500px;
@@ -153,7 +155,7 @@ body {
 
 }
 
-.yellow-attr {
+.yellow-bg {
   background-color: var(--yellow-color, yellow) !important;
 }
 
@@ -181,6 +183,7 @@ body {
 }
 
 /* about section */
+
 .about-container {
   display: flex;
   justify-content: space-around;
@@ -216,7 +219,6 @@ body {
 
 .about-content {
   width: 50%;
-  /* padding-left: 15px; */
 }
 
 .heading-container {
@@ -230,6 +232,10 @@ body {
   margin: 0;
   padding-right: 9px;
   color: var(--yellow-color, yellow);
+}
+
+.horizontal-divider{
+  width: 45px;
 }
 
 .section-title {
@@ -337,7 +343,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 .menu-item {
@@ -386,7 +391,6 @@ body {
   width: 50%;
 }
 
-
 .booking-right {
   background-color: var(--blue-color, black);
   box-sizing: border-box;
@@ -405,21 +409,51 @@ body {
 }
 
 .input-field {
-
+  color: var(--dim-gray-color, gray);
   height: 56px;
   width: 261px;
 }
 
+.select-wrap {
+  border-radius: 2px;
+  width: 261px;
+  background-color: white;
+  position: relative;
+}
+
+.select-label {
+  font-size: 13.6px;
+  font-weight: 400;
+  color: rgba(102, 101, 101, 0.65);
+  padding: 0 8px;
+  position: absolute;
+  top: 6px;
+}
+
+.no-of-people {
+  width: 250px;
+  font-family: Poppins;
+  font-size: 16px;
+  color: var(--dim-gray-color, gray);
+  border: none;
+  position: absolute;
+  height: 40%;
+  left: 5px;
+  bottom: 6px;
+}
 
 #special-request {
   resize: none;
   height: 98px;
   width: 553px;
-
 }
 
 ::placeholder {
   font-family: Poppins;
+  font-size: 16px;
+  padding-left: 12px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .book-now-btn {
@@ -429,6 +463,145 @@ body {
   border-radius: 2px;
 }
 
+/* master chef section */
+
+.master-chef-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 96px;
+}
+
+.chefs-container {
+  display: flex;
+  gap: 0px 72px;
+  padding-top: 47px;
+}
+
+.chef {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chef-img {
+  height: 219px;
+  width:219px;
+  border-radius: 50%;
+}
+
+.chef-name{
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--blue-color,black);
+  padding: 0;
+  margin:0;
+  padding-top: 19px;
+}
+
+.chef-designation{
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--dim-gray-color,gray);
+  padding: 0;
+  margin:0;
+  padding-top: 2px;
+}
+
+.chef-socials{
+  display: flex;
+  padding-top: 15;
+  position: relative;
+}
+
+.chef-social-bg{
+  display: flex;
+  gap: 0px 8px;
+/* z-index: 1; */
+/* left: 0;
+top: 0; */
+}
+
+.chef-social-icon{
+  position: absolute;
+  display: flex;
+  /* z-index: 2; */
+  gap: 0px 30px;
+  bottom: 10;
+  left: 18;
+}
+
+/* testimonials section */
+
+.testimonials-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 96px;
+}
+.reviews-container{
+display: flex;
+padding-top: 48px;
+gap:0px 30px;
+}
+.review{
+  padding: 24px;
+  border-radius: 2px;
+  border: 1px solid #DEE2E6;
+}
+.review-text{
+  width: 293px;
+  font-size: 16px;
+  font-weight:400;
+  color: var(--dim-gray-color,gray);
+}
+
+.client-container{
+  display: flex;
+}
+.client-img{
+  width: 50px;
+  height: 50px;
+  padding-right: 16px;
+}
+.client-info{
+  height: 50px;
+}
+.client-name{
+  font-size: 20px;
+  font-weight:700;
+  color: var(--blue-color,black);
+  padding: 0%;margin:0%;
+}
+.client-profession{
+  font-size: 14px;
+  font-weight:400;
+  color: var(--dim-gray-color,gray);
+  padding: 0%;margin:0%;
+}
+
+/* footer section */
+footer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #272F41;
+}
+.footer-text{
+  font-size: 15px;
+  font-weight: 400;
+}
+.underline-text{
+  text-decoration: underline;
+}
+
+.footer-links a{
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  padding-right: 27px;
+}
 
 /*tab*/
 @media only screen and (max-width:1150px) {
@@ -456,6 +629,11 @@ body {
   .hero-text {
     text-align: center;
     width: 381px;
+  }
+
+  .right-hero {
+    width: 100%;
+    margin: auto;
   }
 
   .hero-img {
@@ -526,35 +704,99 @@ body {
   }
 
   /* booking section */
-
   .booking-container {
     flex-direction: column;
   }
 
-  .booking-img {
-    width: 100%;
-  }
-
-  .booking-left {
-    width: 100%;
-  }
-
-
-  .booking-right {
-    width: 100%;
-  }
-
-  .input-field {
-    width: 100%;
-  }
-
-  #special-request {
-    width: 100%;
-  }
-
+  .booking-left,
+  .booking-img,
+  .booking-right,
+  .input-field,
+  #special-request,
   .book-now-btn {
     width: 100%;
   }
+
+  .no-of-people {
+    width: 95%;
+  }
+
+  /* master chef section */
+  .master-chef-container {
+    padding: 23px;
+  }
+  
+  .chefs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0px 72px;
+    padding-top: 47px;
+  }
+  
+  .chef {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .chef-img {
+    height: 219px;
+    width:219px;
+    border-radius: 50%;
+  }
+  
+  .chef-name{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--blue-color,black);
+    padding: 0;
+    margin:0;
+    padding-top: 19px;
+  }
+  
+  .chef-designation{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--dim-gray-color,gray);
+    padding: 0;
+    margin:0;
+    padding-top: 2px;
+  }
+  
+  .chef-socials{
+    display: flex;
+    padding-top: 15;
+    position: relative;
+  }
+  
+  .chef-social-bg{
+    display: flex;
+    gap: 0px 8px;
+  z-index: 1;
+  /* left: 0;
+  top: 0; */
+  }
+  
+  .chef-social-icon{
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    gap: 0px 30px;
+    bottom: 10;
+    left: 18;
+  }
+  
+/* testimonials section */
+
+.testimonials-container {
+  padding: 23px;
+}
+
+.reviews-container{
+  flex-direction: column;
+  gap:24px 0px;
+  }
+
 }
 
 /* mobile */
@@ -646,5 +888,12 @@ body {
 
   .about-text {
     width: 377px;
+  }
+
+  /* footer section */
+  footer{
+    flex-direction: column;
+    padding: 26px;
+    background-color: var(--blue-color,black);
   }
 }
