@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
 
 :root {
   --yellow-color: #FEA116;
@@ -14,6 +16,20 @@ body {
   padding: 0;
   font-family: Poppins;
 }
+
+a {
+  text-decoration: none;
+}
+
+.yellow-text {
+  color: var(--yellow-color, yellow) !important;
+}
+
+.white-text {
+  color: white !important;
+}
+
+/* layers behind hero and nav bar */
 
 .hero-container {
   position: relative;
@@ -61,7 +77,6 @@ body {
 }
 
 .nav-link {
-  text-decoration: none;
   color: white;
   font-size: 15px;
   margin: 7px;
@@ -74,12 +89,7 @@ body {
   display: none;
 }
 
-.yellow-text {
-  color: var(--yellow-color, yellow) !important;
-}
-
 .btn {
-  text-decoration: none;
   color: white;
   font-size: 16px;
   font-weight: 500;
@@ -97,12 +107,6 @@ body {
 
 /* hero section */
 
-.left-hero .book-table-btn {
-  width: 200px;
-  height: 56px;
-  padding: 16px 48px 16px 48px;
-}
-
 .hero-content {
   display: flex;
   justify-content: center;
@@ -113,6 +117,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+
+.img-container{
+  width:100%;
+  margin:auto;
 }
 
 .main-heading {
@@ -132,10 +141,17 @@ body {
   width: 574px;
 }
 
+.left-hero .book-table-btn {
+  width: 200px;
+  height: 56px;
+  padding: 16px 48px 16px 48px;
+}
+
 .hero-img {
   width: 500px;
   height: 500px;
   padding: 30px;
+  margin:auto;
 }
 
 /* attribute section */
@@ -149,9 +165,8 @@ body {
 
 }
 
-.yellow-attr {
+.yellow-bg {
   background-color: var(--yellow-color, yellow) !important;
-  color: white !important;
 }
 
 .attr {
@@ -178,6 +193,7 @@ body {
 }
 
 /* about section */
+
 .about-container {
   display: flex;
   justify-content: space-around;
@@ -213,7 +229,6 @@ body {
 
 .about-content {
   width: 50%;
-  /* padding-left: 15px; */
 }
 
 .heading-container {
@@ -225,11 +240,16 @@ body {
   font-size: 20px;
   font-weight: 400;
   margin: 0;
-  padding-right: 9px;
   color: var(--yellow-color, yellow);
 }
 
-.about-title {
+.horizontal-divider {
+  width: 45px;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.section-title {
   font-size: 40px;
   font-weight: 700;
   color: var(--blue-color, black);
@@ -237,7 +257,12 @@ body {
   display: flex;
   align-items: center;
   padding: 0;
+  padding-bottom: 47px;
   margin: 0;
+}
+
+.about-section-title {
+  padding-bottom: 0px !important;
 }
 
 .about-title-icon {
@@ -268,6 +293,7 @@ body {
 .vertical-divider {
   height: 57px;
   padding-right: 9px;
+  padding-left: 9px;
 }
 
 .highlight-number {
@@ -302,6 +328,428 @@ body {
   padding: 16px 48px 16px 48px;
 }
 
+/* popular items section */
+
+.popular-items-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 96px;
+}
+
+.menu-type-container {
+  display: flex;
+  gap: 32px;
+  padding-bottom: 67px;
+}
+
+.menu-type {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-type-icon {
+  height: 32px;
+}
+
+.menu-items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-item {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-height: 75px;
+  padding-bottom: 24px;
+}
+
+.menu-item-text {
+  padding-left: 18px;
+  padding-right: 18px;
+  min-width: 65%;
+}
+
+.item-name {
+  font-size: 20px;
+  position: absolute;
+  top: 7px;
+}
+
+.item-desc {
+  font-size: 14px;
+  position: absolute;
+  bottom: 31px;
+}
+
+.item-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--yellow-color, yellow);
+  margin: 0;
+  align-self: flex-start;
+}
+
+/* booking section */
+
+.booking-container {
+  display: flex;
+}
+
+.booking-left {
+  width: 50%;
+}
+
+.booking-right {
+  background-color: var(--blue-color, black);
+  box-sizing: border-box;
+  padding: 31px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.booking-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 32px;
+}
+
+.input-field {
+  color: var(--dim-gray-color, gray);
+  height: 56px;
+  width: 261px;
+}
+
+.select-wrap {
+  border-radius: 2px;
+  width: 261px;
+  background-color: white;
+  position: relative;
+}
+
+.select-label {
+  font-size: 13.6px;
+  font-weight: 400;
+  color: rgba(102, 101, 101, 0.65);
+  padding: 0 8px;
+  position: absolute;
+  top: 6px;
+}
+
+.no-of-people {
+  width: 250px;
+  font-family: Poppins;
+  font-size: 16px;
+  color: var(--dim-gray-color, gray);
+  border: none;
+  position: absolute;
+  height: 40%;
+  left: 5px;
+  bottom: 6px;
+}
+
+#special-request {
+  resize: none;
+  height: 98px;
+  width: 553px;
+}
+
+::placeholder {
+  font-family: Poppins;
+  font-size: 16px;
+  padding-left: 12px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.book-now-btn {
+  border: none;
+  width: 553px;
+  padding: 16px;
+  border-radius: 2px;
+}
+
+/* master chef section */
+
+.master-chef-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 96px;
+}
+
+.chefs-container {
+  display: flex;
+  gap: 0px 72px;
+
+}
+
+.chef {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chef-img {
+  height: 219px;
+  width: 219px;
+  border-radius: 50%;
+}
+
+.chef-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--blue-color, black);
+  padding: 0;
+  margin: 0;
+  padding-top: 19px;
+}
+
+.chef-designation {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--dim-gray-color, gray);
+  padding: 0;
+  margin: 0;
+  padding-top: 2px;
+}
+
+.chef-socials {
+  display: flex;
+  padding-top: 15;
+  position: relative;
+}
+
+.chef-social-bg {
+  display: flex;
+  gap: 0px 8px;
+  /* z-index: 1; */
+  /* left: 0;
+top: 0; */
+}
+
+.chef-social-icon {
+  position: absolute;
+  display: flex;
+  /* z-index: 2; */
+  gap: 0px 30px;
+  bottom: 10;
+  left: 18;
+}
+
+/* testimonials section */
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 96px;
+}
+
+.reviews-container {
+  display: flex;
+  gap: 0px 30px;
+}
+
+.review {
+  padding: 24px;
+  border-radius: 2px;
+  border: 1px solid #DEE2E6;
+}
+
+.review-text {
+  width: 293px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--dim-gray-color, gray);
+}
+
+.client-container {
+  display: flex;
+}
+
+.client-img {
+  width: 50px;
+  height: 50px;
+  padding-right: 16px;
+}
+
+.client-info {
+  height: 50px;
+}
+
+.client-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--blue-color, black);
+  padding: 0%;
+  margin: 0%;
+}
+
+.client-profession {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--dim-gray-color, gray);
+  padding: 0%;
+  margin: 0%;
+}
+
+/* footer section */
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #272F41;
+  height: 70px
+}
+
+.footer-text {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.underline-text {
+  text-decoration: underline;
+}
+
+.footer-links a {
+  font-size: 15px;
+  font-weight: 400;
+  padding-right: 27px;
+}
+
+/* 
+
+CONTACT PAGE
+
+*/
+
+.contact-overlay {
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+.contact-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 69px;
+  padding-bottom: 140px;
+}
+
+.title {
+  font-family: Nunito;
+  font-size: 64px;
+  font-weight: 800;
+  padding: 0%;
+  margin: 0%;
+}
+
+.path {
+  font-family: Heebo;
+  font-weight: 400;
+  padding: 0%;
+  margin: 0%;
+  padding-top: 15px;
+}
+
+.contact-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 96px;
+}
+
+.contact-emails-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0px 162px;
+}
+
+.email-title-section {
+  display: flex;
+}
+
+.email-section {
+  display: flex;
+  align-items: center;
+}
+
+.email-icon {
+  height: 16px;
+  padding-right: 7px;
+}
+
+.email-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--dim-gray-color, gray);
+  padding: 0;
+  margin: 0;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 25px;
+  gap: 0px 32px;
+}
+
+.map-img {
+  width: 50%;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-self: flex-end;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 30px;
+  /* width: 50%; */
+}
+
+.contact-input-field {
+  border: 1px solid var(--light-gray-color);
+  height: 56px;
+  width: 260px;
+  border-radius: 2px;
+}
+
+.subject-field {
+  width: 553px;
+}
+
+#message {
+  border: 1px solid var(--light-gray-color);
+  border-radius: 2px;
+  resize: none;
+  height: 148px;
+  width: 553px;
+}
+
+
+.go-to-top {
+  position: fixed;
+  bottom: 96px;
+  z-index: 9;
+  right: 10px;
+  padding: 10px;
+}
+
 /*tab*/
 @media only screen and (max-width:1150px) {
 
@@ -330,9 +778,15 @@ body {
     width: 381px;
   }
 
+  .right-hero {
+    width: 100%;
+    margin: auto;
+  }
+
   .hero-img {
     width: 70%;
     height: 70%;
+    margin:auto;
   }
 
   /* attr section */
@@ -347,7 +801,7 @@ body {
     justify-content: center;
     align-items: center;
     width: auto;
-    padding: 15px;
+    padding: 20px;
   }
 
   .about-grid {
@@ -370,7 +824,7 @@ body {
     width: 50%;
   }
 
-  .about-title {
+  .section-title {
     font-size: 35px;
   }
 
@@ -383,8 +837,160 @@ body {
     align-items: flex-start;
   }
 
+  /* popular items section */
+  .popular-items-container {
+    padding: 20px;
+  }
 
+  .menu-type-container {
+    justify-content: center;
+    width: 100%
+  }
+
+  .menu-item {
+    width: 100%;
+  }
+
+  /* booking section */
+  .booking-container {
+    flex-direction: column;
+  }
+
+  .booking-left,
+  .booking-img,
+  .booking-right,
+  .input-field,
+  #special-request,
+  .book-now-btn {
+    width: 100%;
+  }
+
+  .no-of-people {
+    width: 95%;
+  }
+
+  /* master chef section */
+  .master-chef-container {
+    padding: 23px;
+  }
+
+  .chefs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0px 72px;
+  }
+
+  .chef {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chef-img {
+    height: 219px;
+    width: 219px;
+    border-radius: 50%;
+  }
+
+  .chef-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--blue-color, black);
+    padding: 0;
+    margin: 0;
+    padding-top: 19px;
+  }
+
+  .chef-designation {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--dim-gray-color, gray);
+    padding: 0;
+    margin: 0;
+    padding-top: 2px;
+  }
+
+  .chef-socials {
+    display: flex;
+    padding-top: 15;
+    position: relative;
+  }
+
+  .chef-social-bg {
+    display: flex;
+    gap: 0px 8px;
+    z-index: 1;
+    /* left: 0;
+  top: 0; */
+  }
+
+  .chef-social-icon {
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    gap: 0px 30px;
+    bottom: 10;
+    left: 18;
+  }
+
+  /* testimonials section */
+
+  .testimonials-container {
+    padding: 23px;
+  }
+
+  .reviews-container {
+    flex-direction: column;
+    gap: 24px 0px;
+  }
+
+  /* contact page */
+
+  .title {
+    font-family: Poppins;
+    font-size: 55px;
+    text-align: center;
+    text-wrap: nowrap;
+  }
+
+  .path {
+    font-family: Poppins;
+  }
+
+  .contact-page-container {
+    padding: 27px;
+  }
+
+  .contact-emails-container {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px 0px;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    padding: 23px;
+    gap: 24px 0px;
+  }
+
+  .map-img {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .map-img img {
+    width: 100%;
+  }
+
+  .contact-input-field,
+  .subject-field,
+  #message {
+    width: 100%;
+  }
 }
+
 
 /* mobile */
 @media only screen and (max-width:540px) {
@@ -449,7 +1055,7 @@ body {
   }
 
   /* about section */
-  .about-grid {
+  /* .about-grid {
     grid-template-columns: repeat(2, 130px);
     grid-template-rows: repeat(2, 130px);
     gap: 10px;
@@ -463,17 +1069,24 @@ body {
   .small-about-img {
     width: 97px;
     height: 97px;
-  }
+  } */
 
   .about-content {
     width: 100%;
   }
 
-  .about-title {
+  .section-title {
     font-size: 28px;
   }
 
   .about-text {
     width: 377px;
+  }
+
+  /* footer section */
+  footer {
+    flex-direction: column;
+    padding: 26px;
+    background-color: var(--blue-color, black);
   }
 }
